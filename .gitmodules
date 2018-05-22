@@ -1,0 +1,48 @@
+[submodule "bundle/emmet-vim"]
+	path = bundle/emmet-vim
+	url = git@github.com:mattn/emmet-vim.git
+[submodule "bundle/fzf"]
+	path = bundle/fzf
+	url = git@github.com:junegunn/fzf.git
+[submodule "bundle/fzf.vim"]
+	path = bundle/fzf.vim
+	url = git@github.com:junegunn/fzf.vim.git
+[submodule "bundle/vim-vue"]
+	path = bundle/vim-vue
+	url = git@github.com:posva/vim-vue.git
+[submodule "bundle/vim-polyglot"]
+	path = bundle/vim-polyglot
+	url = git@github.com:sheerun/vim-polyglot.git
+[submodule "bundle/ack"]
+	path = bundle/ack
+	url = git@github.com:mileszs/ack.vim.git
+[submodule "bundle/css-color"]
+	path = bundle/css-color
+	url = git@github.com:ap/vim-css-color.git
+[submodule "bundle/fugitive"]
+	path = bundle/fugitive
+	url = git@github.com:tpope/vim-fugitive.git
+[submodule "bundle/eunuch"]
+	path = bundle/eunuch
+	url = git@github.com:tpope/vim-eunuch.git
+[submodule "bundle/repeat"]
+	path = bundle/repeat
+	url = git@github.com:tpope/vim-repeat.git
+[submodule "bundle/supertab"]
+	path = bundle/supertab
+	url = git@github.com:ervandew/supertab.git
+[submodule "bundle/trailing-whitespace"]
+	path = bundle/trailing-whitespace
+	url = git@github.com:bronson/vim-trailing-whitespace.git
+[submodule "bundle/multiple-cursors"]
+	path = bundle/multiple-cursors
+	url = git@github.com:terryma/vim-multiple-cursors.git
+[submodule "bundle/visualstar"]
+	path = bundle/visualstar
+	url = git@github.com:bronson/vim-visual-star-search.git
+[submodule "bundle/ale"]
+	path = bundle/ale
+	url = git@github.com:w0rp/ale.git
+[submodule "bundle/gitgutter"]
+	path = bundle/gitgutter
+	url = git@github.com:airblade/vim-gitgutter.git
