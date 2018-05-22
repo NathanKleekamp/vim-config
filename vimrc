@@ -30,6 +30,7 @@ if has('gui_running')
   colorscheme cobalt2
   set guifont=Menlo:h14
   autocmd! GUIEnter * set vb t_vb=
+  set t_Co=256
 endif
 
 " disable checking for prepocessors in .vue files
@@ -44,3 +45,8 @@ let g:netrw_banner = 0
 let g:netrw_liststyle = 3
 let g:netrw_browse_split = 2
 let g:netrw_winsize = 15
+
+"lightline
+let g:lightline = { 'colorscheme': 'wombat' }
+set laststatus=2
+set noshowmode
