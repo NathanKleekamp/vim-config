@@ -40,9 +40,6 @@
 [submodule "bundle/visualstar"]
 	path = bundle/visualstar
 	url = git@github.com:bronson/vim-visual-star-search.git
-[submodule "bundle/ale"]
-	path = bundle/ale
-	url = git@github.com:w0rp/ale.git
 [submodule "bundle/gitgutter"]
 	path = bundle/gitgutter
 	url = git@github.com:airblade/vim-gitgutter.git
