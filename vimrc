@@ -10,7 +10,12 @@ set showmatch
 set ruler
 set wildmenu
 set wildmode=list:longest
+set nowrap
+set nolinebreak
+set nolist
 set updatetime=100
+set tabstop=2
+set shiftwidth=2
 set shell=bash\ --login
 set clipboard=unnamed
 set rtp+=/usr/local/opt/fzf
@@ -61,6 +66,19 @@ augroup ruby
   set re=1
 augroup END
 
+" Move a line of text using CTRL+[jk]
+nmap <M-j> mz:m+<cr>`z
+nmap <M-k> mz:m-2<cr>`z
+vmap <M-j> :m'>+<cr>`<my`>mzgv`yo`z
+vmap <M-k> :m'<-2<cr>`>my`<mzgv`yo`z
+
+if has("mac") || has("macunix")
+  nmap <c-j> <M-j>
+  nmap <c-k> <M-k>
+  vmap <c-j> <M-j>
+  vmap <c-k> <M-k>
+endif
+
 " netrw configs
 let g:netrw_banner = 0
 let g:netrw_liststyle = 3
@@ -75,3 +93,8 @@ set noshowmode
 " Ack
 " Use vim-dispatch plugin to perform searches in the background
 let g:ack_use_dispatch=1
+
+" DISABLED
+" autocmd FileType html setlocal tabstop=2
+" autocmd FileType hbs setlocal tabstop=2
+
