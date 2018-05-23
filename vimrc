@@ -6,21 +6,23 @@ syntax on
 set encoding=utf8
 set relativenumber
 set number
-set expandtab
 set showmatch
 set ruler
 set wildmenu
 set wildmode=list:longest
-set tabstop=2
-set shiftwidth=2
-set softtabstop=2
-set expandtab
 set updatetime=100
 set shell=bash\ --login
 set clipboard=unnamed
 set rtp+=/usr/local/opt/fzf
 set spelllang=en
 set spellfile=$HOME/Dropbox/vim/spell/en.utf-8.add
+
+" Indenting
+set tabstop=2
+set shiftwidth=2
+set softtabstop=2
+set expandtab
+set autoindent
 
 " Searching
 nnoremap / /\v
