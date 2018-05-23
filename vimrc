@@ -8,14 +8,29 @@ set relativenumber
 set number
 set expandtab
 set showmatch
+set ruler
+set wildmenu
+set wildmode=list:longest
+set tabstop=2
+set shiftwidth=2
+set softtabstop=2
+set expandtab
 set updatetime=100
 set shell=bash\ --login
 set clipboard=unnamed
 set rtp+=/usr/local/opt/fzf
 set spelllang=en
 set spellfile=$HOME/Dropbox/vim/spell/en.utf-8.add
-autocmd FileType html setlocal tabstop=2
-autocmd FileType hbs setlocal tabstop=2
+
+" Searching
+nnoremap / /\v
+vnoremap / /\v
+set ignorecase
+set smartcase
+set gdefault
+set incsearch
+set showmatch
+set hlsearch
 
 " More memory
 set hidden
