@@ -69,3 +69,6 @@ let g:netrw_winsize = 15
 let g:lightline = { 'colorscheme': 'wombat' }
 set laststatus=2
 set noshowmode
+
+" Ack
+g:ack_use_dispatch=1 " Use vim-dispatch plugin to perform searches in the background
