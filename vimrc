@@ -3,6 +3,7 @@ execute pathogen#infect()
 filetype on
 syntax on
 
+set encoding=utf8
 set relativenumber
 set number
 set expandtab
@@ -10,6 +11,9 @@ set showmatch
 set updatetime=100
 set shell=bash\ --login
 set clipboard=unnamed
+set rtp+=/usr/local/opt/fzf
+set spelllang=en
+set spellfile=$HOME/Dropbox/vim/spell/en.utf-8.add
 autocmd FileType html setlocal tabstop=2
 autocmd FileType hbs setlocal tabstop=2
 
