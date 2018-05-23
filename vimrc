@@ -6,16 +6,33 @@ syntax on
 set encoding=utf8
 set relativenumber
 set number
-set expandtab
 set showmatch
+set ruler
+set wildmenu
+set wildmode=list:longest
 set updatetime=100
 set shell=bash\ --login
 set clipboard=unnamed
 set rtp+=/usr/local/opt/fzf
 set spelllang=en
 set spellfile=$HOME/Dropbox/vim/spell/en.utf-8.add
-autocmd FileType html setlocal tabstop=2
-autocmd FileType hbs setlocal tabstop=2
+
+" Indenting
+set tabstop=2
+set shiftwidth=2
+set softtabstop=2
+set expandtab
+set autoindent
+
+" Searching
+nnoremap / /\v
+vnoremap / /\v
+set ignorecase
+set smartcase
+set gdefault
+set incsearch
+set showmatch
+set hlsearch
 
 " More memory
 set hidden
@@ -54,3 +71,7 @@ let g:netrw_winsize = 15
 let g:lightline = { 'colorscheme': 'wombat' }
 set laststatus=2
 set noshowmode
+
+" Ack
+" Use vim-dispatch plugin to perform searches in the background
+let g:ack_use_dispatch=1
