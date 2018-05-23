@@ -71,4 +71,5 @@ set laststatus=2
 set noshowmode
 
 " Ack
-g:ack_use_dispatch=1 " Use vim-dispatch plugin to perform searches in the background
+" Use vim-dispatch plugin to perform searches in the background
+let g:ack_use_dispatch=1
