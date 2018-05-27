@@ -52,3 +52,6 @@
 [submodule "bundle/vim-javascript"]
 	path = bundle/vim-javascript
 	url = git@github.com:pangloss/vim-javascript.git
+[submodule "bundle/vim-js-file-import"]
+	path = bundle/vim-js-file-import
+	url = git@github.com:kristijanhusak/vim-js-file-import.git
