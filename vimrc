@@ -3,6 +3,8 @@ execute pathogen#infect()
 filetype on
 syntax on
 
+let mapleader=','
+
 set encoding=utf8
 set relativenumber
 set number
