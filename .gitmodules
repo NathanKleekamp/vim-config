@@ -55,3 +55,6 @@
 [submodule "bundle/vim-js-file-import"]
 	path = bundle/vim-js-file-import
 	url = git@github.com:kristijanhusak/vim-js-file-import.git
+[submodule "bundle/vim-gutentags"]
+	path = bundle/vim-gutentags
+	url = git@github.com:ludovicchabant/vim-gutentags.git
