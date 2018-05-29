@@ -88,9 +88,23 @@ let g:netrw_browse_split = 2
 let g:netrw_winsize = 15
 
 "lightline
-let g:lightline = { 'colorscheme': 'wombat' }
 set laststatus=2
 set noshowmode
+let g:lightline = {
+  \ 'colorscheme': 'wombat',
+  \ 'component_function': {
+  \   'filename': 'LightlineFilename',
+  \ },
+\ }
+
+function! LightlineFilename()
+  let root = fnamemodify(get(b:, 'git_dir'), ':h')
+  let path = expand('%:p')
+  if path[:len(root)-1] ==# root
+    return path[len(root)+1:]
+  endif
+  return expand('%')
+endfunction
 
 " Ack
 " Use vim-dispatch plugin to perform searches in the background
