@@ -64,6 +64,3 @@
 [submodule "bundle/vim-fireplace"]
 	path = bundle/vim-fireplace
 	url = git@github.com:tpope/vim-fireplace.git
-[submodule "vim-parinfer"]
-	path = vim-parinfer
-	url = git@github.com:bhurlow/vim-parinfer.git
