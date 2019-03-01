@@ -55,7 +55,13 @@ augroup javascript
 augroup END
 
 if executable('ag')
+  set grepprg=ag\ --vimgrep
   let g:ackprg = 'ag --vimgrep'
+endif
+
+if executable('rg')
+  set grepprg=rg\ --vimgrep
+  let g:ackprg = 'rg --vimgrep'
 endif
 
 if has('gui_running')
