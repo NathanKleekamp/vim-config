@@ -19,7 +19,7 @@ set updatetime=100
 set tabstop=2
 set shiftwidth=2
 set shell=bash\ --login
-set clipboard=unnamed
+set clipboard=unnamed,unnamedplus
 set rtp+=/usr/local/opt/fzf
 set spelllang=en
 set spellfile=$HOME/Dropbox/vim/spell/en.utf-8.add
@@ -78,18 +78,18 @@ augroup ruby
   set re=1
 augroup END
 
-" Move a line of text using CTRL+[jk]
-nmap <M-j> mz:m+<cr>`z
-nmap <M-k> mz:m-2<cr>`z
-vmap <M-j> :m'>+<cr>`<my`>mzgv`yo`z
-vmap <M-k> :m'<-2<cr>`>my`<mzgv`yo`z
-
 if has("mac") || has("macunix")
   nmap <c-j> <M-j>
   nmap <c-k> <M-k>
   vmap <c-j> <M-j>
   vmap <c-k> <M-k>
 endif
+
+" Move a line of text using CTRL+[jk]
+nmap <C-j> mz:m+<cr>`z
+nmap <C-k> mz:m-2<cr>`z
+vmap <C-j> :m'>+<cr>`<my`>mzgv`yo`z
+vmap <C-k> :m'<-2<cr>`>my`<mzgv`yo`z
 
 " netrw configs
 let g:netrw_banner = 0
