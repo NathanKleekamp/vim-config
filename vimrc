@@ -3,7 +3,7 @@ execute pathogen#infect()
 filetype on
 syntax on
 
-let mapleader=','
+let mapleader=' '
 
 set encoding=utf8
 set relativenumber
@@ -52,6 +52,8 @@ set history=100
 augroup javascript
   autocmd FileType javascript set colorcolumn=120
   highlight ColorColumn ctermbg=white guibg=white
+
+  autocmd FileType javascript nnoremap <buffer> <leader># I//<esc>
 augroup END
 
 if executable('ag')
@@ -127,3 +129,8 @@ let g:gutentags_dont_load=1
 " autocmd FileType html setlocal tabstop=2
 " autocmd FileType hbs setlocal tabstop=2
 
+nnoremap <leader>a :Ack!<Space>
+nnoremap <leader>ev :vsplit $MYVIMRC<cr>
+
+" Copy current file path
+nnoremap <leader>cfp :let @*=@%<cr>
