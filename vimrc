@@ -35,9 +35,6 @@ set softtabstop=2
 set expandtab
 set autoindent
 
-" Searching
-nnoremap / /\v
-vnoremap / /\v
 set ignorecase
 set smartcase
 set gdefault
@@ -50,10 +47,16 @@ set hidden
 set history=100
 
 augroup javascript
+  autocmd!
   autocmd FileType javascript set colorcolumn=120
   highlight ColorColumn ctermbg=white guibg=white
 
   autocmd FileType javascript nnoremap <buffer> <leader># I//<esc>
+augroup END
+
+augroup vue
+  autocmd!
+  autocmd BufNewFile *.vue 0r ~/.vim/templates/skeleton.vue
 augroup END
 
 if executable('ag')
@@ -79,19 +82,6 @@ let g:vue_disable_pre_processors=1
 augroup ruby
   set re=1
 augroup END
-
-if has("mac") || has("macunix")
-  nmap <c-j> <M-j>
-  nmap <c-k> <M-k>
-  vmap <c-j> <M-j>
-  vmap <c-k> <M-k>
-endif
-
-" Move a line of text using CTRL+[jk]
-nmap <C-j> mz:m+<cr>`z
-nmap <C-k> mz:m-2<cr>`z
-vmap <C-j> :m'>+<cr>`<my`>mzgv`yo`z
-vmap <C-k> :m'<-2<cr>`>my`<mzgv`yo`z
 
 " netrw configs
 let g:netrw_banner = 0
@@ -125,12 +115,5 @@ let g:ack_use_dispatch=1
 " Disable Gutentags by default
 let g:gutentags_dont_load=1
 
-" DISABLED
-" autocmd FileType html setlocal tabstop=2
-" autocmd FileType hbs setlocal tabstop=2
-
-nnoremap <leader>a :Ack!<Space>
-nnoremap <leader>ev :vsplit $MYVIMRC<cr>
-
-" Copy current file path
-nnoremap <leader>cfp :let @*=@%<cr>
+source ~/.vim/sources/abbr.vim
+source ~/.vim/sources/maps.vim
