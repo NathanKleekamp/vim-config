@@ -64,6 +64,7 @@ augroup text
   function SetTextOptions()
     set wrap
     set linebreak
+    set spell
   endfunction
   autocmd FileType text,markdown call SetTextOptions()
 augroup END
