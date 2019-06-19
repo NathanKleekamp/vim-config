@@ -59,6 +59,15 @@ augroup vue
   autocmd BufNewFile *.vue 0r ~/.vim/templates/skeleton.vue
 augroup END
 
+augroup text
+  autocmd!
+  function SetTextOptions()
+    set wrap
+    set linebreak
+  endfunction
+  autocmd FileType text,markdown call SetTextOptions()
+augroup END
+
 if executable('ag')
   set grepprg=ag\ --vimgrep
   let g:ackprg = 'ag --vimgrep'
