@@ -24,4 +24,4 @@ nnoremap <leader>ea :vsplit ~/.vim/sources/abbr.vim<cr>
 nnoremap <leader>cfp :let @*=@%<cr>
 
 " Open vertical term
-nnoremap <leader>vt :vert term<cr>
+nnoremap <leader>t :vert term<cr>
