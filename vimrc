@@ -61,7 +61,7 @@ augroup END
 
 augroup text
   autocmd!
-  function SetTextOptions()
+  function! SetTextOptions()
     set wrap
     set linebreak
     set spell

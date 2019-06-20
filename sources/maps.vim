@@ -19,9 +19,8 @@ nnoremap <leader>a :Ack!<Space>
 nnoremap <leader>ev :vsplit $MYVIMRC<cr>
 nnoremap <leader>em :vsplit ~/.vim/sources/maps.vim<cr>
 nnoremap <leader>ea :vsplit ~/.vim/sources/abbr.vim<cr>
+nnoremap <leader>t :vert term<cr>
+nnoremap <leader>h :vert help<Space>
 
 " Copy current file path
 nnoremap <leader>cfp :let @*=@%<cr>
-
-" Open vertical term
-nnoremap <leader>t :vert term<cr>
