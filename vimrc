@@ -23,6 +23,7 @@ set clipboard=unnamed,unnamedplus
 set rtp+=/usr/local/opt/fzf
 set spelllang=en
 set spellfile=$HOME/Dropbox/vim/spell/en.utf-8.add
+set background=dark
 
 " swapfiles
 set swapfile
