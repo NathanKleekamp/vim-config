@@ -73,3 +73,6 @@
 [submodule "bundle/neoterm"]
 	path = bundle/neoterm
 	url = git@github.com:kassio/neoterm.git
+[submodule "bundle/markdown-preview"]
+	path = bundle/markdown-preview
+	url = git@github.com:iamcco/markdown-preview.nvim.git
