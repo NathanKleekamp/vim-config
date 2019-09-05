@@ -128,3 +128,18 @@ let g:gutentags_dont_load=1
 
 source ~/.vim/sources/abbr.vim
 source ~/.vim/sources/maps.vim
+
+" Autostart markdown preview when editing a markdown file
+let g:mkdp_auto_start = 1
+
+" Refresh markdown preview after leaving insert mode
+let g:mkdp_refresh_slow = 1
+
+" Markdown preview server available to other on network
+let g:mkdp_open_to_the_world = 1
+
+" Echo markdown preview url in terminal
+let g:mkdp_echo_preview_url = 1
+
+" Run markdown preview on custom port
+let g:mkdp_port = '9876'
