@@ -23,6 +23,7 @@ nnoremap <leader>em :vsplit ~/.vim/sources/maps.vim<cr>
 nnoremap <leader>ea :vsplit ~/.vim/sources/abbr.vim<cr>
 nnoremap <leader>t :vert term<cr>
 nnoremap <leader>h :vert help<Space>
+nnoremap <leader>v :vsp<Space>
 
 " Copy current file path
 nnoremap <leader>cfp :let @*=@%<cr>
