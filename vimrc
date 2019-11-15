@@ -119,10 +119,6 @@ function! LightlineFilename()
   return expand('%')
 endfunction
 
-" Ack
-" Use vim-dispatch plugin to perform searches in the background
-let g:ack_use_dispatch=1
-
 " Disable Gutentags by default
 let g:gutentags_dont_load=1
 
