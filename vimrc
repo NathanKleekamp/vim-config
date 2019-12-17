@@ -119,5 +119,14 @@ endfunction
 " Disable Gutentags by default
 let g:gutentags_dont_load=1
 
+" Add Ale support for Prettier
+let g:ale_fixers = {
+\ 'javascript': ['prettier'],
+\ 'json': ['prettier'],
+\ 'css': ['prettier'],
+\ 'markdown': ['prettier'],
+\ 'typescript': ['prettier'],
+\}
+
 source ~/.vim/sources/abbr.vim
 source ~/.vim/sources/maps.vim
