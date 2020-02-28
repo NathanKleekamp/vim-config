@@ -18,6 +18,7 @@ vmap <C-k> :m'<-2<cr>`>my`<mzgv`yo`z
 nnoremap <leader>a :Ack!<Space>
 nnoremap <leader>an :ALENext<cr>
 nnoremap <leader>ap :ALEPrevious<cr>
+nnoremap <leader>f :FZF<cr>
 nnoremap <leader>ev :vsplit $MYVIMRC<cr>
 nnoremap <leader>em :vsplit ~/.vim/sources/maps.vim<cr>
 nnoremap <leader>ea :vsplit ~/.vim/sources/abbr.vim<cr>
