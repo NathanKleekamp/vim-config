@@ -25,6 +25,10 @@ set spelllang=en
 set spellfile=$HOME/Dropbox/vim/spell/en.utf-8.add
 set background=dark
 
+" Set backupcopy to yes to avoid system file watching issues per
+" https://webpack.js.org/configuration/watch/#vim
+set backupcopy=yes
+
 " swapfiles
 set swapfile
 set dir=~/.vim/temp
@@ -83,7 +87,7 @@ endif
 
 if has('gui_running')
   colorscheme cobalt2
-  set guifont=Menlo:h14
+  set guifont=Menlo:h16
   autocmd! GUIEnter * set vb t_vb=
   set t_Co=256
 endif
@@ -127,6 +131,17 @@ let g:ale_fixers = {
 \ 'markdown': ['prettier'],
 \ 'typescript': ['prettier'],
 \}
+let g:ale_completion_enabled = 1
+let g:ale_completion_tsserver_autoimport = 1
+
+" iTerm configuration
+if $TERM_PROGRAM =~ "iTerm"
+  " Vertical bar in insert mode
+  let &t_SI = "\<Esc>]50;CursorShape=1\x7"
+
+  " Block in normal mode
+  let &t_EI = "\<Esc>]50;CursorShape=0\x7"
+endif
 
 source ~/.vim/sources/abbr.vim
 source ~/.vim/sources/maps.vim
