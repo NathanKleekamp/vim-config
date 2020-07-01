@@ -134,13 +134,7 @@ let g:ale_fixers = {
 let g:ale_completion_enabled = 1
 let g:ale_completion_tsserver_autoimport = 1
 let g:ale_javascript_eslint_executable='eslint_d --cache'
-let g:ale_linters = {
-\ 'javascript': ['eslint'],
-\ 'json': ['eslint'],
-\ 'typescript': ['eslint'],
-\ 'jsx': ['eslint'],
-\ 'tsx': ['eslint'],
-\}
+let g:ale_javascript_eslint_use_global=1
 
 " iTerm configuration
 if $TERM_PROGRAM =~ "iTerm"
