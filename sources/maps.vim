@@ -26,12 +26,13 @@ nnoremap <leader>ea :vsplit ~/.vim/sources/abbr.vim<cr>
 nnoremap <leader>em :vsplit ~/.vim/sources/maps.vim<cr>
 nnoremap <leader>ev :vsplit $MYVIMRC<cr>
 nnoremap <leader>f :FZF<cr>
+nnoremap <leader>fj :%!python -m json.tool<cr>
 nnoremap <leader>fr :ALEFindReferences<cr>
 nnoremap <leader>gd :ALEGoToDefinition<cr>
 nnoremap <leader>h :vert help<Space>
 nnoremap <leader>hi :ALEHover<cr>
 nnoremap <leader>t :vert term<cr>
-nnoremap <leader>v :vsp<Space>
+nnoremap <leader>v <NOP>
 nnoremap <leader>vgd :ALEGoToDefinitionInVSplit<cr>
 
 " Copy current file path
