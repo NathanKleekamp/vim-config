@@ -49,6 +49,8 @@ set hlsearch
 set hidden
 set history=100
 
+au BufNewFile,BufRead COMMIT_EDITMSG setlocal spell
+
 augroup javascript
   autocmd!
   autocmd FileType javascript set colorcolumn=120
