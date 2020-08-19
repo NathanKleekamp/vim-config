@@ -32,6 +32,8 @@ nnoremap <leader>gd :ALEGoToDefinition<cr>
 nnoremap <leader>h :vert help<Space>
 nnoremap <leader>hi :ALEHover<cr>
 nnoremap <leader>t :vert term<cr>
+nnoremap <leader>tp :tabp<cr>
+nnoremap <leader>tn :tabn<cr>
 nnoremap <leader>v <NOP>
 nnoremap <leader>vgd :ALEGoToDefinitionInVSplit<cr>
 

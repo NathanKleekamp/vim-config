@@ -16,8 +16,6 @@ set nowrap
 set nolinebreak
 set nolist
 set updatetime=100
-set tabstop=2
-set shiftwidth=2
 set shell=bash\ --login
 set clipboard=unnamed,unnamedplus
 set rtp+=/usr/local/opt/fzf
@@ -75,6 +73,10 @@ augroup text
   autocmd FileType text,markdown call SetTextOptions()
 augroup END
 
+augroup projects
+  au BufRead,BufEnter /Users/nkleekamp/Projects/costar-suite/* set tabstop=4 shiftwidth=4 softtabstop=4
+augroup END
+
 if executable('ag')
   set grepprg=ag\ --vimgrep
   let g:ackprg = 'ag --vimgrep'
@@ -123,18 +125,19 @@ endfunction
 " Disable Gutentags by default
 let g:gutentags_dont_load=1
 
+let g:ale_javascript_eslint_executable='eslint_d'
+let g:ale_javascript_eslint_use_global=1
+
 " Add Ale support for Prettier
 let g:ale_fixers = {
-\ 'javascript': ['prettier'],
-\ 'json': ['prettier'],
-\ 'css': ['prettier'],
-\ 'markdown': ['prettier'],
-\ 'typescript': ['prettier'],
+\ 'javascript': ['prettier', 'eslint'],
+\ 'json': ['prettier', 'eslint'],
+\ 'css': ['prettier', 'eslint'],
+\ 'markdown': ['prettier', 'eslint'],
+\ 'typescript': ['prettier', 'eslint'],
 \}
 let g:ale_completion_enabled = 1
 let g:ale_completion_tsserver_autoimport = 1
-let g:ale_javascript_eslint_executable='eslint_d --cache'
-let g:ale_javascript_eslint_use_global=1
 
 " iTerm configuration
 if $TERM_PROGRAM =~ "iTerm"
